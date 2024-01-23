@@ -14,6 +14,39 @@
 </head>
 <body>
     <!-- ==========Header Part Start===============-->
+            <!-- ===========Navber================ -->
+            <nav class="container mx-auto">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-xl">Hockey’s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn">Button</a>
+                    </div>
+                  </div>
+            </nav>
+           
    
             <!-- ==========Banner Part Start===============-->
            <div class="container mx-auto">
@@ -84,9 +117,9 @@
             <div class="grid lg:grid-cols-4 gap-5 container mx-auto mt-20">
                 <!-- part 1 -->
                 <div class="text-center">
-                    <h2 class="flex justify-center items-center text-3xl p-12 border-8 border-t-red-500/100 border-b-red-500/100 border-l-red-500/100 w-10 h-10 rounded-full mx-auto text-[#131318] font-extrabold">
-                        87%
-                    </h2>
+                    <div class="radial-progress text-[red] font-extrabold " style="--value:87;" role="progressbar">
+                        <h3 class="text-3xl text-[#000] font-extrabold">87%</h3>
+                    </div>
                     <h3 class="text-[#131318] font-bold text-xl mt-6">
                         Prayer Facility
                     </h3>
@@ -96,9 +129,9 @@
                 </div>
                 <!-- part 2 -->
                 <div class="text-center">
-                    <h2 class="flex justify-center items-center text-3xl p-12 border-8 border-t-red-500/100 border-b-red-500/100 border-l-red-500/100 w-10 h-10 rounded-full mx-auto text-[#131318] font-extrabold">
-                        95%
-                    </h2>
+                    <div class="radial-progress text-[#42eec9] font-extrabold " style="--value:87;" role="progressbar">
+                        <h3 class="text-3xl text-[#000] font-bold p-8">97%</h3>
+                    </div>
                     <h3 class="text-[#131318] font-bold text-xl mt-6">
                         Experienced Coach
                     </h3>
@@ -106,11 +139,11 @@
                         Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
-                <!-- part 2 -->
+                <!-- part 3 -->
                 <div class="text-center">
-                    <h2 class="flex justify-center items-center text-3xl p-12 border-8 border-t-red-500/100 border-b-red-500/100 border-l-red-500/100 w-10 h-10 rounded-full mx-auto text-[#131318] font-extrabold">
-                        90%
-                    </h2>
+                    <div class="radial-progress text-[#fffb00] font-extrabold " style="--value:87;" role="progressbar">
+                        <h3 class="text-3xl text-[#000] font-extrabold p-8">97%</h3>
+                    </div>
                     <h3 class="text-[#131318] font-bold text-xl mt-6">
                         Senior Player
                     </h3>
@@ -118,11 +151,11 @@
                         Amet consectetur. Condimentum dignissim adipiscing .
                     </p>
                 </div>
-                <!-- part 2 -->
+                <!-- part 4 -->
                 <div class="text-center">
-                    <h2 class="flex justify-center items-center text-3xl p-12 border-8 border-t-red-500/100 border-b-red-500/100 border-l-red-500/100 w-10 h-10 rounded-full mx-auto text-[#131318] font-extrabold">
-                        80%
-                    </h2>
+                    <div class="radial-progress text-[#3c49c5f3] font-extrabold " style="--value:80;" role="progressbar">
+                        <h3 class="text-3xl text-[black] font-extrabold p-8">80%</h3>
+                    </div>
                     <h3 class="text-[#131318] font-bold text-xl mt-6">
                         Training Ground
                     </h3>
@@ -143,8 +176,8 @@
             </div>
             <div class="mt-20 w-auto lg:grid grid-cols-2 grid-rows-2 justify-center gap-8 items-center">
                 <!-- part 1 -->
-                <div class="card bg-base-100 shadow-xl image-full p-6">
-                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                <div class="card bg-base-100 shadow-xl image-full p-6 col-span-1">
+                    <figure><img class="w-full" src="Images/2.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title mt-24 text-white font-extrabold text-2xl">Junior Program</h2>
                       <p class="text-white mt-4 ">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br>
@@ -156,8 +189,8 @@
                     </div>
                   </div>
                   <!-- part 2 -->
-                  <div class="card bg-base-100 shadow-xl image-full p-6">
-                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                  <div class="card bg-base-100 shadow-xl image-full p-6 col-span-1">
+                    <figure><img class="w-full" src="Images/3.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title mt-24 text-white font-extrabold text-2xl">Junior Program</h2>
                       <p class="text-white mt-4 ">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br>
@@ -169,10 +202,10 @@
                     </div>
                   </div>
                   <!-- part 3 -->
-                  <div class="card bg-base-100 shadow-xl image-full p-6">
-                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                  <div class="card shadow-xl image-full p-6 col-span-2">
+                    <figure><img class="w-full" src="Images/4.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title mt-24 text-white font-extrabold text-2xl">Junior Program</h2>
+                      <h2 class="card-title mt-60 text-white font-extrabold text-2xl">Professional Program</h2>
                       <p class="text-white mt-4 ">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br>
                         Elit elit enim sagittis turpis in magna. Id et sed euismod natoque <br>
                          amet nunc morbi nulla. Tortor congue sed et in.</p>
@@ -497,8 +530,8 @@
                    dolor. Purus urna in sit nullam proin. </p>
             </div>
             <!-- from and icon -->
-            <div class="grid lg:grid-cols-2 gap-6 mt-20">
-                 <div class=" grid gap-4 lg:grid-cols-1 grid-rows-3">
+            <div class="grid grid-cols-1 p-4 lg:grid-cols-12 gap-6 mt-20">
+                 <div class=" grid gap-4 lg:grid-cols-1 grid-rows-3 col-span-4">
                     <div>
                         <div class="bg-[#bced6d1a] p-8 rounded-xl">
                             <img src="Images/Group 1171275317.png" alt="">
@@ -522,35 +555,38 @@
                     </div>
                    
                 </div>
-                <div>
-                    <form action="">
-                        <div class="lg:flex gap-6">
-                            <div>
-                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
-                                <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" placeholder="Enter Your Name">
-                            </div>
-                            <div>
-                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
-                                <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" placeholder="Enter Your Name">
-                        </div>
-                        </div>
-                        <div class="lg:flex gap-6">
-                            <div>
-                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
-                                <input class="border-2 p-3 rounded-lg mt-3" type="text" placeholder="Enter Your Name">
-                            </div>
-                            <div>
-                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
-                                <input class="border-2 p-3 rounded-lg mt-3" type="text" placeholder="Enter Your Name">
-                        </div>
-                      
-                        </div>
-                        <div>
+                <div class="col-span-8">
+                    <form class="grid lg:grid-cols-12 grid-raw-6 gap-6 " action="">
+                       
+                                <!-- part 1 -->
+                        <div class="col-span-6">
                             <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
-                            <input class="border-2 p-3 rounded-lg mt-3" type="text" placeholder="Enter Your Name">
+                            <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" >
                         </div>
-                        <div>
-                            <button class="btn w-full">Send Message</button>
+                             <!-- part 2 -->
+                            <div class="col-span-6">
+                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
+                                <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" >
+                            </div>
+                              <!-- part 3 -->
+                        <div class="col-span-6">
+                            <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
+                            <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" >
+                        </div>
+                             <!-- part 4 -->
+                            <div class="col-span-6">
+                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
+                                <input class="border-2 p-3 rounded-lg mt-3 w-full" type="text" >
+                            </div>
+                               
+                            <!-- text area  -->
+                            <div class="col-span-12">
+                                <label class="text[#131318] text-2xl font-extrabold" for="">Your Name</label><br>
+                                <textarea class="border-2 border-gray-300 w-full" id="w3review" name="w3review" rows="11" cols="full"></textarea>
+                              </div>
+                           
+        
+                            <button class="col-span-12 btn w-full">Send Message</button>
                         </div>
                     </form>
                 </div>
